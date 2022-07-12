@@ -6,7 +6,7 @@ var QRCode = require("qrcode");
 
 let wallets = [];
 index = 0;
-while (index++ < 600) {
+while (index++ < 42) {
   var mnemonic = bip39.generateMnemonic();
   const hdwallet = HDWallet.fromMnemonic(mnemonic);
   var publicAddress = `0x${hdwallet
